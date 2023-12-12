@@ -39,6 +39,7 @@ namespace DESIGNER
             this.lblClaveAcceso = new System.Windows.Forms.Label();
             this.gboxLogin = new System.Windows.Forms.GroupBox();
             this.errorLogin = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.gboxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).BeginInit();
             this.SuspendLayout();
@@ -111,6 +112,7 @@ namespace DESIGNER
             // 
             // gboxLogin
             // 
+            this.gboxLogin.Controls.Add(this.button1);
             this.gboxLogin.Controls.Add(this.lblTitulo);
             this.gboxLogin.Controls.Add(this.btnFinalizar);
             this.gboxLogin.Controls.Add(this.lblClaveAcceso);
@@ -120,7 +122,7 @@ namespace DESIGNER
             this.gboxLogin.Controls.Add(this.txtEmail);
             this.gboxLogin.Location = new System.Drawing.Point(12, 12);
             this.gboxLogin.Name = "gboxLogin";
-            this.gboxLogin.Size = new System.Drawing.Size(507, 353);
+            this.gboxLogin.Size = new System.Drawing.Size(507, 415);
             this.gboxLogin.TabIndex = 0;
             this.gboxLogin.TabStop = false;
             // 
@@ -128,11 +130,21 @@ namespace DESIGNER
             // 
             this.errorLogin.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(21, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(467, 36);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Acerca de";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 381);
+            this.ClientSize = new System.Drawing.Size(537, 451);
             this.Controls.Add(this.gboxLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -155,5 +167,6 @@ namespace DESIGNER
         private System.Windows.Forms.Label lblClaveAcceso;
         private System.Windows.Forms.GroupBox gboxLogin;
         private System.Windows.Forms.ErrorProvider errorLogin;
+        private System.Windows.Forms.Button button1;
     }
 }
